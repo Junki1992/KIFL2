@@ -7,9 +7,10 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
+import androidx.fragment.app.DialogFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), ClearConfirmDialogFragment.NoticeDialogListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,9 +43,6 @@ class MainActivity : AppCompatActivity() {
             //メッセージ表示欄であるTextViewオブジェクトを取得。
             val output = findViewById<TextView>(R.id.tvOutput)
 
-            //クリア確認ダイアログフラグメントオブジェクトを生成。
-            val dialogFragment = ClearConfirmDialogFragment()
-
             //idのR値によって処理を分岐。
             when(view.id) {
                 //保存ボタンの場合・・・
@@ -65,11 +63,24 @@ class MainActivity : AppCompatActivity() {
                 //クリアボタンの場合・・・
                 R.id.btClear -> {
                     //ダイアログを表示。
+                    //クリア確認ダイアログフラグメントオブジェクトを生成。
+                    val dialogFragment = ClearConfirmDialogFragment()
                     dialogFragment.show(supportFragmentManager, "ClearConfirmDialogFragment")
-                    //メッセージ表示欄に空文字を設定。
-                    output.text = ""
                 }
             }
         }
+    }
+
+    override fun onDialogPositiveClick(dialog: DialogFragment) {
+        // User touched the dialog's positive button
+        //メッセージ表示欄であるTextViewオブジェクトを取得。
+        val output = findViewById<TextView>(R.id.tvOutput)
+
+        //メッセージ表示欄に空文字を設定。
+        output.text = ""
+    }
+
+    override fun onDialogNegativeClick(dialog: DialogFragment) {
+        // User touched the dialog's negative button
     }
 }
