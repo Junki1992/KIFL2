@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Kanda Institute of Foreign Langage</string>
+    <string name="tv_title">神田外語学院</string>
+    <string name="cb_job">就職</string>
+    <string name="cb_sch">大学編入</string>
+    <string name="cb_abr">海外留学</string>
+    <string name="cb_oth">その他</string>
+    <string name="rb_male">男性</string>
+    <string name="rb_female">女性</string>
+    <string name="bt_save">保存</string>
+    <string name="bt_clear">クリア</string>
+    <string name="dialog_title">クリア確認</string>
+    <string name="dialog_msg">選択情報をクリアしますか？</string>
+    <string name="dialog_btn_ok">はい</string>
+    <string name="dialog_btn_ng">いいえ</string>
+    <string name="dialog_btn_nu">問合せ</string>
+    <string name="dialog_ok_toast">選択情報をクリアしました。</string>
+    <string name="dialog_ng_toast">キャンセルしました。</string>
+    <string name="dialog_nu_toast">お問合せ内容をご入力ください。</string>
+
+    <string-array name="sp_courseList">
+        <item>英語専攻科</item>
+        <item>アジア/ヨーロッパ言語科</item>
+        <item>国際ビジネスキャリア科</item>
+        <item>児童英語教育科</item>
+        <item>国際エアライン</item>
+        <item>国際ホテル科</item>
+        <item>国際観光科</item>
+        <item>グローバルコミュニケーション科</item>
+        <item>留学科</item>
+        <item>英語基礎養成科（1年制）</item>
+        <item>共通科目・選択科目</item>
+        <item>日本語併修課程</item>
+    </string-array>
+</resources>

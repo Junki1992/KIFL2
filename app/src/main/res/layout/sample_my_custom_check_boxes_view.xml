@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <com.websarva.wings.android.kifl2.MyCustomCheckBoxesView-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:background="#ccc"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:paddingBottom="40dp"-->
+<!--        app:exampleColor="#33b5e5"-->
+<!--        app:exampleDimension="24sp"-->
+<!--        app:exampleDrawable="@android:drawable/ic_menu_add"-->
+<!--        app:exampleString="Hello, MyCustomCheckBoxesView" />-->
+
+    <CheckBox
+        android:id="@+id/cbJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:text="@string/cb_job"/>
+
+    <CheckBox
+        android:id="@+id/cbSch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:text="@string/cb_sch"/>
+
+    <CheckBox
+        android:id="@+id/cbAbr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:text="@string/cb_abr"/>
+
+    <CheckBox
+        android:id="@+id/cbOth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:text="@string/cb_oth"/>
+</LinearLayout>
